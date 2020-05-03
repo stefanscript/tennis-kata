@@ -4,6 +4,7 @@ describe("Tennis calculator", () =>  {
     it("should get a basic score", () => {
         toTennisScore(0, 0, "Love-Love");
         toTennisScore(1, 0, "Fifteen-Love");
+        toTennisScore(2, 0, "Thirty-Love");
     });
 });
 
