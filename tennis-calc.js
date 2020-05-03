@@ -1,18 +1,14 @@
 function score(player1Points, player2Points) {
-    const score1= convert(player1Points);
+    const score1 = convert(player1Points);
     if (score1 !== undefined) {
         return score1 + "-Love";
     }
     
-    if (player2Points === 3) {
-        return "Love-" + scoreFor(player2Points);
+    const score2 = convert(player2Points);
+    if (score2 !== undefined) {
+        return "Love-" + score2;
     }
-    if (player2Points === 2) {
-        return "Love-" + scoreFor(player2Points);
-    }
-    if (player2Points === 1) {
-        return "Love-" + scoreFor(player2Points);
-    }
+    
     return "Love-Love";
 }
 
