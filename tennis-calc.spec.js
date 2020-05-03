@@ -21,6 +21,10 @@ describe("Tennis calculator", () =>  {
     it("should get advantage", () => {
         toTennisScore(4,3, "Advantage Player 1");
         toTennisScore(7,6, "Advantage Player 1");
+    
+        toTennisScore(3,4, "Advantage Player 2");
+        toTennisScore(6,7, "Advantage Player 2");
+
     });
 });
 
