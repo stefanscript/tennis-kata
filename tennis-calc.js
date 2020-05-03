@@ -1,5 +1,5 @@
 function score(player1Points, player2Points) {
-    if(player1Points === 3 && player2Points === 3) {
+    if(player1Points >= 3 && player2Points >= 3) {
         return "Deuce";
     }
     const score1 = convert(player1Points);

@@ -15,6 +15,7 @@ describe("Tennis calculator", () =>  {
     
     it("should get deuce", () => {
         toTennisScore(3,3, "Deuce");
+        toTennisScore(4,4, "Deuce");
     })
 });
 
