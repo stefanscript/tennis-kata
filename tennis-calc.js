@@ -1,6 +1,9 @@
 function score(player1Points, player2Points) {
-    if(player1Points > 3 && player1Points - player2Points >= 2) {
+    if(player1Points > 3 && player1Points - player2Points === 2) {
         return "Player 1 Wins";
+    }
+    if(player2Points > 3 && player2Points - player1Points === 2) {
+        return "Player 2 Wins";
     }
     if(player1Points >= 3 && player2Points >= 3) {
         if(player1Points > player2Points) {

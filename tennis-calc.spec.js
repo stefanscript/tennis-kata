@@ -29,6 +29,10 @@ describe("Tennis calculator", () =>  {
     it("should get the winner", () => {
         toTennisScore(4,2, "Player 1 Wins");
         toTennisScore(5,3, "Player 1 Wins");
+    
+        toTennisScore(2,4, "Player 2 Wins");
+        toTennisScore(3,5, "Player 2 Wins");
+
     });
 });
 
