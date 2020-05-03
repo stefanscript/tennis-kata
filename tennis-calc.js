@@ -1,13 +1,14 @@
 function score(player1Points, player2Points) {
-    if(player1Points > 3 && Math.abs(player1Points - player2Points) === 2) {
+    if ((player1Points > 3 || player2Points > 3) && Math.abs(player1Points - player2Points) === 2) {
+        if (player2Points > 3) {
+            return "Player 2 Wins";
+        }
         return "Player 1 Wins";
     }
-    if(player2Points > 3 && Math.abs(player1Points - player2Points) === 2) {
-        return "Player 2 Wins";
-    }
-    if(player1Points >= 3 && player2Points >= 3) {
+    
+    if (player1Points >= 3 && player2Points >= 3) {
         if (player1Points !== player2Points) {
-            return "Advantage Player " +(player1Points > player2Points ? "1" : "2");
+            return "Advantage Player " + (player1Points > player2Points ? "1" : "2");
         }
         return "Deuce";
     }
