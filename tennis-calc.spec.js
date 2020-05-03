@@ -6,6 +6,9 @@ describe("Tennis calculator", () =>  {
         toTennisScore(1, 0, "Fifteen-Love");
         toTennisScore(2, 0, "Thirty-Love");
         toTennisScore(3, 0, "Forty-Love");
+        toTennisScore(0, 1,"Love-Fifteen");
+        toTennisScore(0, 2,"Love-Thirty");
+        toTennisScore(0, 3,"Love-Forty");
     });
 });
 
