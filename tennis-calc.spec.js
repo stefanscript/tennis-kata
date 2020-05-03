@@ -32,7 +32,6 @@ describe("Tennis calculator", () =>  {
     
         toTennisScore(2,4, "Player 2 Wins");
         toTennisScore(3,5, "Player 2 Wins");
-
     });
 });
 
